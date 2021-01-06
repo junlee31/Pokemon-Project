@@ -69,7 +69,7 @@ df = df[:-22]
     bars1 = [78, 96.7, 68.3, 56.7, 61.7, 75.3]
     bars2 = [85, 50, 95, 120, 115, 80]
     bars3 = [62, 56.5, 101, 51.5, 101, 28]
- 
+
         # Set position of bar on X axis
     r1 = np.arange(len(bars1))
     r2 = [x + barWidth for x in r1]
@@ -79,7 +79,6 @@ df = df[:-22]
     plt.bar(r1, bars1, color='#1f77b4', width=barWidth, edgecolor='white', label='Dragon Ground')
     plt.bar(r2, bars2, color='#ff7f0e', width=barWidth, edgecolor='white', label='Fairy Flying')
     plt.bar(r3, bars3, color='#2ca02c', width=barWidth, edgecolor='white', label='Steel Psychic')
-  
         # Add xticks on the middle of the group bars
     plt.xlabel('Stats', fontweight='bold')
     plt.xticks([r + barWidth for r in range(len(bars1))], ['Hp', 'Atk', 'Def', 'Sp. Atk', 'Sp. Def', 'Speed'])
